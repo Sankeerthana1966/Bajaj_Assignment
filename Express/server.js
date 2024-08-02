@@ -12,9 +12,9 @@ app.post('/bfhl', (req, res) => {
         return res.status(400).json({ is_success: false, error: 'Invalid input' });
     }
 
-    const user_id = "john_doe_17091999";
-    const email = "john@xyz.com";
-    const roll_number = "ABCD123";
+    const user_id = "Sankeerthana_Kotha_27092003";
+    const email = "sankeerthana_k@srmap.edu.in";
+    const roll_number = "AP21110010011";
 
     const numbers = data.filter(item => !isNaN(item));
     const alphabets = data.filter(item => /^[A-Za-z]$/.test(item));
