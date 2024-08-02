@@ -17,7 +17,7 @@ function App() {
                 throw new Error('Invalid JSON format: No array found in the JSON object');
             }
             const dataArray = parsedInput[arrayKey];
-            const res = await axios.post('http://localhost:3006/bfhl', { data: dataArray });
+            const res = await axios.post('https://bajajassignmentexpressjs.onrender.com/bfhl', { data: dataArray });
             setResponse(res.data);
         } catch (err) {
             console.error(err);
